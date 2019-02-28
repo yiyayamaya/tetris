@@ -1,0 +1,221 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information:  ,  , LIC=IC9VE-5EKS9-TK6B9-4PBHE-6DJAB-GDKE7
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.25.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DCM.DLL V1.17.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.29.0
+Dialog DLL:      TCM.DLL V1.35.1.0
+ 
+<h2>Project:</h2>
+C:\Users\Mr.Wu\Desktop\dasanshang\armlab\lab11\lab11.uvprojx
+Project File Date:  01/01/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling sys.c...
+compiling adc.c...
+compiling led.c...
+compiling usart.c...
+usart.c(48): warning:  #260-D: explicit type is missing ("int" assumed)
+  _sys_exit(int x) 
+usart.c: 1 warning, 0 errors
+compiling remote.c...
+compiling main.c...
+zzz.h(6): warning:  #1-D: last line of file ends without a newline
+  	};
+main.c(46): warning:  #223-D: function "Adc_Init" declared implicitly
+   	Adc_Init(); 		//ADC初始化	    
+main.c(55): warning:  #223-D: function "memset" declared implicitly
+  	memset(fangkuai_arr, 0, sizeof(int)*192);
+main.c(75): warning:  #223-D: function "newfangkuai" declared implicitly
+  	  newfangkuai();//随机生成方块
+main.c(81): warning:  #223-D: function "bijiao" declared implicitly
+  		if(bijiao()==0) //刚初始化的方块与背景冲突 游戏结束
+main.c(104): warning:  #223-D: function "getfinal_next" declared implicitly
+  			getfinal_next();//得到finalnext final_next=final+fangkuai_next
+main.c(106): warning:  #223-D: function "bijiao2" declared implicitly
+  			if(bijiao2()==0) //下一刻方块与背景冲突
+main.c(108): warning:  #223-D: function "refreshfinal" declared implicitly
+  			refreshfinal();//final =final+fangkuai
+main.c(110): warning:  #223-D: function "refresh" declared implicitly
+  			refresh(finalarray);//刚冲突
+main.c(112): warning:  #223-D: function "xiaochu" declared implicitly
+  			xiaochu();//消除底部
+main.c(127): warning:  #223-D: function "refresh" declared implicitly
+  			refresh(fangkuai.zhizhen_arr);
+main.c(34): warning:  #177-D: variable "key"  was declared but never referenced
+  	u8 key;
+main.c(35): warning:  #177-D: variable "adcx"  was declared but never referenced
+  	u16 adcx;
+main.c(36): warning:  #177-D: variable "mode"  was declared but never referenced
+  	int mode=1;
+main.c(38): warning:  #177-D: variable "temp"  was declared but never referenced
+  	float temp;
+main.c(39): warning:  #177-D: variable "temperate"  was declared but never referenced
+  	float temperate;	 
+main.c(40): warning:  #177-D: variable "temperate2"  was declared but never referenced
+  	float temperate2; 
+main.c(41): warning:  #177-D: variable "temperate3"  was declared but never referenced
+  	float temperate3;
+main.c(173): warning:  #159-D: declaration is incompatible with previous "refresh"  (declared at line 110)
+  void refresh(int array[16][12])	//刷新函数
+main.c(296): warning:  #159-D: declaration is incompatible with previous "getfinal_next"  (declared at line 104)
+  void getfinal_next() // final_next=final+fangkuai_next
+main.c(356): warning:  #159-D: declaration is incompatible with previous "refreshfinal"  (declared at line 108)
+  void refreshfinal() // final=final+fangkuai_arr
+main.c(386): warning:  #159-D: declaration is incompatible with previous "newfangkuai"  (declared at line 75)
+  void newfangkuai()
+main.c(646): warning:  #159-D: declaration is incompatible with previous "xiaochu"  (declared at line 112)
+  void xiaochu()//消除 
+main.c: 23 warnings, 0 errors
+compiling delay.c...
+compiling move.c...
+compiling lcd.c...
+compiling tsensor.c...
+compiling stm32f10x_exti.c...
+compiling misc.c...
+compiling key.c...
+assembling startup_stm32f10x_hd.s...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_gpio.c...
+compiling exti.c...
+zzz.h(6): warning:  #1-D: last line of file ends without a newline
+  	};
+exti.c(134): warning:  #223-D: function "chongtu3" declared implicitly
+  								if(chongtu3(y1+1,x1-1,y2,x2,y3-1,x3+1,y4-2,x4+2)==1)
+exti.c(156): warning:  #223-D: function "chongtu3" declared implicitly
+  							if(chongtu3(y1-2,x1+1,y2-1,x2,y3,x3-1,y4+1,x4-2)==1)
+exti.c(175): warning:  #223-D: function "chongtu3" declared implicitly
+  								if(chongtu3(y1,x1,y2+1,x2+1,y3,x3,y4,x4)==1)
+exti.c(187): warning:  #223-D: function "chongtu3" declared implicitly
+  								if(chongtu3(y1+1,x1-1,y2,x2,y3,x3,y4,x4)==1)
+exti.c(199): warning:  #223-D: function "chongtu3" declared implicitly
+  								if(chongtu3(y1,x1,y2,x2,y3-1,x3-1,y4,x4)==1)
+exti.c(211): warning:  #223-D: function "chongtu3" declared implicitly
+  								if(chongtu3(y1,x1,y2,x2,y3,x3,y4-1,x4+1)==1)
+exti.c(222): warning:  #223-D: function "chongtu3" declared implicitly
+  								if(chongtu3(y1-1,x1+1,y2,x2,y3-1,x3-1,y4,x4-2)==1)
+exti.c(241): warning:  #223-D: function "chongtu3" declared implicitly
+  								if(chongtu3(y1+1,x1-1,y2+1,x2+1,y3,x3,y4,x4+2)==1)
+exti.c(260): warning:  #223-D: function "chongtu3" declared implicitly
+  								if(chongtu3(y1,x1,y2+1,x2-1,y3,x3+2,y4+1,x4+1)==1)
+exti.c(278): warning:  #223-D: function "chongtu3" declared implicitly
+  								if(chongtu3(y1+1,x1+1,y2,x2,y3+1,x3-1,y4,x4-2)==1)
+exti.c(297): warning:  #223-D: function "chongtu3" declared implicitly
+  								if(chongtu3(y1+1,x1+1,y2,x2,y3-1,x3-1,y4,x4-2)==1)
+exti.c(314): warning:  #223-D: function "chongtu3" declared implicitly
+  								if(chongtu3(y1-1,x1+1,y2,x2,y3+1,x3-1,y4-2,x4)==1)
+exti.c(332): warning:  #223-D: function "chongtu3" declared implicitly
+  								if(chongtu3(y1,x1+2,y2+1,x2+1,y3,x3,y4-1,x4-1)==1)
+exti.c(350): warning:  #223-D: function "chongtu3" declared implicitly
+  								if(chongtu3(y1+2,x1,y2-1,x2+2,y3,x3,y4+1,x4-1)==1)
+exti.c(369): warning:  #223-D: function "chongtu3" declared implicitly
+  								if(chongtu3(y1+1,x1+1,y2,x2,y3-2,x3,y4-1,x4-1)==1)
+exti.c(391): warning:  #223-D: function "chongtu3" declared implicitly
+  								if(chongtu3(y1,x1+1,y2-1,x2+2,y3,x3,y4+1,x4-1)==1)
+exti.c(411): warning:  #223-D: function "chongtu3" declared implicitly
+  								if(chongtu3(y1+1,x1+1,y2+2,x2,y3,x3,y4-1,x4-1)==1)
+exti.c(429): warning:  #223-D: function "chongtu3" declared implicitly
+  								if(chongtu3(y1-1,x1+1,y2,x2,y3+1,x3-1,y4,x4-2)==1)
+exti.c(497): warning:  #223-D: function "chongtu2" declared implicitly
+  		if(chongtu2(1)==1)
+exti.c(493): warning:  #177-D: variable "led0pwmval"  was declared but never referenced
+  	u16 led0pwmval=0;	
+exti.c(523): warning:  #223-D: function "chongtu2" declared implicitly
+  		if(chongtu2(-1)==1)
+exti.c: 22 warnings, 0 errors
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling system_stm32f10x.c...
+compiling stm32f10x_tim.c...
+linking...
+Program Size: Code=30420 RO-data=376 RW-data=80 ZI-data=5920  
+".\Objects\lab11.axf" - 0 Error(s), 46 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.3.0.pack
+                ARM.CMSIS.5.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+   * Component: ADC Version: 3.5.0
+   * Component: EXTI Version: 3.5.0
+   * Component: Framework Version: 3.5.1
+   * Component: GPIO Version: 3.5.0
+   * Component: RCC Version: 3.5.0
+   * Component: TIM Version: 3.5.0
+   * Component: USART Version: 3.5.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F103RC
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\StdPeriph_Driver\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.1
+
+   * Component: Keil::Device:Startup:1.0.0
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\system_stm32f10x.c
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Source file:   Device\Source\ARM\startup_stm32f10x_hd.s
+
+   * Component: Keil::Device:StdPeriph Drivers:ADC:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_adc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_adc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:EXTI:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_exti.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_exti.h
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:3.5.1
+      Include file:  Device\StdPeriph_Driver\inc\misc.h
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+      Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:TIM:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_tim.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_tim.c
+
+   * Component: Keil::Device:StdPeriph Drivers:USART:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_usart.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_usart.c
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
